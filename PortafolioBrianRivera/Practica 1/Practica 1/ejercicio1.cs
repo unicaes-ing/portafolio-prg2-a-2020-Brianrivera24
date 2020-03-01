@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Practica1
+namespace Practica_1
 {
-    public partial class Promedio : Form
+    public partial class ejercicio1 : Form
     {
-        public Promedio()
+        public ejercicio1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnCalc_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             double c1, c2, c3, prom;
             c1 = Convert.ToDouble(txtExamen1.Text);
@@ -32,10 +32,14 @@ namespace Practica1
 
             txtPromedio.Text = prom.ToString("N2");
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
-        private void btnLimp_Click(object sender, EventArgs e)
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtExamen1.Clear();
             txtExamen2.Clear();
@@ -45,8 +49,7 @@ namespace Practica1
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
-    }
-
+}

@@ -1,6 +1,6 @@
-﻿namespace Practica1
+﻿namespace Practica_1
 {
-    partial class Promedio
+    partial class ejercicio1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCalc = new System.Windows.Forms.Button();
-            this.btnLimp = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,107 +36,115 @@
             this.txtExamen2 = new System.Windows.Forms.TextBox();
             this.txtExamen3 = new System.Windows.Forms.TextBox();
             this.txtPromedio = new System.Windows.Forms.TextBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnCalc
-            // 
-            this.btnCalc.Location = new System.Drawing.Point(21, 302);
-            this.btnCalc.Name = "btnCalc";
-            this.btnCalc.Size = new System.Drawing.Size(75, 23);
-            this.btnCalc.TabIndex = 0;
-            this.btnCalc.Text = "Calcular";
-            this.btnCalc.UseVisualStyleBackColor = true;
-            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
-            // 
-            // btnLimp
-            // 
-            this.btnLimp.Location = new System.Drawing.Point(168, 302);
-            this.btnLimp.Name = "btnLimp";
-            this.btnLimp.Size = new System.Drawing.Size(75, 23);
-            this.btnLimp.TabIndex = 1;
-            this.btnLimp.Text = "Limpiar";
-            this.btnLimp.UseVisualStyleBackColor = true;
-            this.btnLimp.Click += new System.EventHandler(this.btnLimp_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(311, 302);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 2;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 40);
+            this.label1.Location = new System.Drawing.Point(13, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Examen 1";
+            this.label1.Size = new System.Drawing.Size(74, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Examen 1:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 92);
+            this.label2.Location = new System.Drawing.Point(13, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Examen 2";
+            this.label2.Size = new System.Drawing.Size(74, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Examen 2:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 146);
+            this.label3.Location = new System.Drawing.Point(12, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Examen 3";
+            this.label3.Size = new System.Drawing.Size(74, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Examen 3:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 222);
+            this.label4.Location = new System.Drawing.Point(13, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Promedio";
+            this.label4.Size = new System.Drawing.Size(72, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Promedio:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtExamen1
             // 
-            this.txtExamen1.Location = new System.Drawing.Point(168, 35);
+            this.txtExamen1.Location = new System.Drawing.Point(129, 36);
             this.txtExamen1.Name = "txtExamen1";
             this.txtExamen1.Size = new System.Drawing.Size(100, 22);
-            this.txtExamen1.TabIndex = 7;
+            this.txtExamen1.TabIndex = 4;
+            this.txtExamen1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtExamen2
             // 
-            this.txtExamen2.Location = new System.Drawing.Point(168, 92);
+            this.txtExamen2.Location = new System.Drawing.Point(129, 71);
             this.txtExamen2.Name = "txtExamen2";
             this.txtExamen2.Size = new System.Drawing.Size(100, 22);
-            this.txtExamen2.TabIndex = 8;
+            this.txtExamen2.TabIndex = 5;
             // 
             // txtExamen3
             // 
-            this.txtExamen3.Location = new System.Drawing.Point(168, 146);
+            this.txtExamen3.Location = new System.Drawing.Point(129, 104);
             this.txtExamen3.Name = "txtExamen3";
             this.txtExamen3.Size = new System.Drawing.Size(100, 22);
-            this.txtExamen3.TabIndex = 9;
+            this.txtExamen3.TabIndex = 6;
             // 
             // txtPromedio
             // 
-            this.txtPromedio.Location = new System.Drawing.Point(168, 217);
+            this.txtPromedio.Location = new System.Drawing.Point(129, 193);
             this.txtPromedio.Name = "txtPromedio";
             this.txtPromedio.Size = new System.Drawing.Size(100, 22);
-            this.txtPromedio.TabIndex = 10;
+            this.txtPromedio.TabIndex = 7;
             // 
-            // Promedio
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(27, 279);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcular.TabIndex = 8;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(119, 279);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 9;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(218, 279);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 10;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 380);
+            this.ClientSize = new System.Drawing.Size(327, 349);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtPromedio);
             this.Controls.Add(this.txtExamen3);
             this.Controls.Add(this.txtExamen2);
@@ -148,12 +153,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnLimp);
-            this.Controls.Add(this.btnCalc);
-            this.Name = "Promedio";
+            this.Name = "Form1";
             this.Text = "Promedio";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,9 +162,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnCalc;
-        private System.Windows.Forms.Button btnLimp;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -172,6 +170,9 @@
         private System.Windows.Forms.TextBox txtExamen2;
         private System.Windows.Forms.TextBox txtExamen3;
         private System.Windows.Forms.TextBox txtPromedio;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 
