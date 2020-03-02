@@ -16,5 +16,24 @@ namespace Practica_4
         {
             InitializeComponent();
         }
+
+        public static int fibonacci(int n)
+        {
+            if (n < 2)
+
+                return n;
+
+            else
+
+                return fibonacci(n - 1) + fibonacci(n - 2);
+
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            int numero = Convert.ToInt32(txtNumero.Text);
+            int fibonac = fibonacci(numero);
+            txtFibonacci.Text = string.Format("{0}", fibonac);
+        }
     }
 }

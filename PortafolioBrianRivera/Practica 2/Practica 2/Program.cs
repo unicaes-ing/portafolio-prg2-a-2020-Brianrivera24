@@ -16,7 +16,7 @@ namespace Practica_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ejercicio3());
+            Application.Run(new ejercicio2());
         }
     }
 }

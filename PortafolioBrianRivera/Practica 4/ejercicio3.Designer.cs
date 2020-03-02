@@ -32,7 +32,7 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtFibo = new System.Windows.Forms.TextBox();
+            this.txtFibonacci = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -52,6 +52,7 @@
             this.btnCalcular.TabIndex = 1;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // txtNumero
             // 
@@ -69,19 +70,19 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Fibonacci";
             // 
-            // txtFibo
+            // txtFibonacci
             // 
-            this.txtFibo.Location = new System.Drawing.Point(100, 124);
-            this.txtFibo.Name = "txtFibo";
-            this.txtFibo.Size = new System.Drawing.Size(100, 22);
-            this.txtFibo.TabIndex = 4;
+            this.txtFibonacci.Location = new System.Drawing.Point(100, 124);
+            this.txtFibonacci.Name = "txtFibonacci";
+            this.txtFibonacci.Size = new System.Drawing.Size(100, 22);
+            this.txtFibonacci.TabIndex = 4;
             // 
             // ejercicio3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(248, 162);
-            this.Controls.Add(this.txtFibo);
+            this.Controls.Add(this.txtFibonacci);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.btnCalcular);
@@ -99,6 +100,6 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtFibo;
+        private System.Windows.Forms.TextBox txtFibonacci;
     }
 }

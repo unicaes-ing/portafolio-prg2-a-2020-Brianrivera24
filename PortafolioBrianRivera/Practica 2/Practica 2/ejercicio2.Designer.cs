@@ -28,148 +28,211 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.groupBox1.SuspendLayout();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.grpDescuentos = new System.Windows.Forms.GroupBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.rdoDes0 = new System.Windows.Forms.RadioButton();
+            this.rdoDes5 = new System.Windows.Forms.RadioButton();
+            this.rdoDes10 = new System.Windows.Forms.RadioButton();
+            this.rdoDes15 = new System.Windows.Forms.RadioButton();
+            this.rdoDes20 = new System.Windows.Forms.RadioButton();
+            this.grpDescuentos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtCantidad
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
+            this.txtCantidad.Location = new System.Drawing.Point(100, 21);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(100, 22);
+            this.txtCantidad.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Text = "Cantidad:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.Size = new System.Drawing.Size(52, 17);
             this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.label2.Text = "Precio:";
             // 
-            // textBox2
+            // txtPrecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 3;
+            this.txtPrecio.Location = new System.Drawing.Point(100, 78);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 22);
+            this.txtPrecio.TabIndex = 3;
             // 
-            // textBox3
+            // txtDescuento
             // 
-            this.textBox3.Location = new System.Drawing.Point(100, 161);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 4;
+            this.txtDescuento.Location = new System.Drawing.Point(100, 161);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(100, 22);
+            this.txtDescuento.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 165);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.Size = new System.Drawing.Size(78, 17);
             this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.label3.Text = "descuento:";
             // 
-            // button1
+            // btnLimpiar
             // 
-            this.button1.Location = new System.Drawing.Point(100, 271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Location = new System.Drawing.Point(62, 302);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // groupBox1
+            // grpDescuentos
             // 
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Location = new System.Drawing.Point(253, 26);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(137, 241);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Opciones";
+            this.grpDescuentos.Controls.Add(this.rdoDes20);
+            this.grpDescuentos.Controls.Add(this.rdoDes15);
+            this.grpDescuentos.Controls.Add(this.rdoDes10);
+            this.grpDescuentos.Controls.Add(this.rdoDes5);
+            this.grpDescuentos.Controls.Add(this.rdoDes0);
+            this.grpDescuentos.Location = new System.Drawing.Point(253, 26);
+            this.grpDescuentos.Name = "grpDescuentos";
+            this.grpDescuentos.Size = new System.Drawing.Size(137, 257);
+            this.grpDescuentos.TabIndex = 7;
+            this.grpDescuentos.TabStop = false;
+            this.grpDescuentos.Text = "Descuentos";
             // 
-            // checkBox1
+            // btnCalcular
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(7, 37);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 21);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.btnCalcular.Location = new System.Drawing.Point(114, 118);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcular.TabIndex = 8;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // checkBox2
+            // label4
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 77);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(98, 21);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 214);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 17);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Total:";
             // 
-            // checkBox3
+            // txtTotal
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 116);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(98, 21);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.txtTotal.Location = new System.Drawing.Point(100, 214);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(100, 22);
+            this.txtTotal.TabIndex = 10;
+            this.txtTotal.TextChanged += new System.EventHandler(this.txt_TextChanged);
             // 
-            // checkBox4
+            // btnSalir
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 158);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(98, 21);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.btnSalir.Location = new System.Drawing.Point(173, 302);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 11;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // Form2
+            // rdoDes0
+            // 
+            this.rdoDes0.AutoSize = true;
+            this.rdoDes0.Location = new System.Drawing.Point(17, 47);
+            this.rdoDes0.Name = "rdoDes0";
+            this.rdoDes0.Size = new System.Drawing.Size(49, 21);
+            this.rdoDes0.TabIndex = 0;
+            this.rdoDes0.TabStop = true;
+            this.rdoDes0.Text = "0%";
+            this.rdoDes0.UseVisualStyleBackColor = true;
+            // 
+            // rdoDes5
+            // 
+            this.rdoDes5.AutoSize = true;
+            this.rdoDes5.Location = new System.Drawing.Point(17, 92);
+            this.rdoDes5.Name = "rdoDes5";
+            this.rdoDes5.Size = new System.Drawing.Size(49, 21);
+            this.rdoDes5.TabIndex = 1;
+            this.rdoDes5.TabStop = true;
+            this.rdoDes5.Text = "5%";
+            this.rdoDes5.UseVisualStyleBackColor = true;
+            // 
+            // rdoDes10
+            // 
+            this.rdoDes10.AutoSize = true;
+            this.rdoDes10.Location = new System.Drawing.Point(17, 139);
+            this.rdoDes10.Name = "rdoDes10";
+            this.rdoDes10.Size = new System.Drawing.Size(57, 21);
+            this.rdoDes10.TabIndex = 2;
+            this.rdoDes10.TabStop = true;
+            this.rdoDes10.Text = "10%";
+            this.rdoDes10.UseVisualStyleBackColor = true;
+            // 
+            // rdoDes15
+            // 
+            this.rdoDes15.AutoSize = true;
+            this.rdoDes15.Location = new System.Drawing.Point(17, 183);
+            this.rdoDes15.Name = "rdoDes15";
+            this.rdoDes15.Size = new System.Drawing.Size(57, 21);
+            this.rdoDes15.TabIndex = 3;
+            this.rdoDes15.TabStop = true;
+            this.rdoDes15.Text = "15%";
+            this.rdoDes15.UseVisualStyleBackColor = true;
+            // 
+            // rdoDes20
+            // 
+            this.rdoDes20.AutoSize = true;
+            this.rdoDes20.Location = new System.Drawing.Point(17, 221);
+            this.rdoDes20.Name = "rdoDes20";
+            this.rdoDes20.Size = new System.Drawing.Size(57, 21);
+            this.rdoDes20.TabIndex = 4;
+            this.rdoDes20.TabStop = true;
+            this.rdoDes20.Text = "20%";
+            this.rdoDes20.UseVisualStyleBackColor = true;
+            // 
+            // ejercicio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 377);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.grpDescuentos);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDescuento);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form2";
+            this.Controls.Add(this.txtCantidad);
+            this.Name = "ejercicio2";
             this.Text = "Form2";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpDescuentos.ResumeLayout(false);
+            this.grpDescuentos.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,17 +240,22 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtDescuento;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.GroupBox grpDescuentos;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.RadioButton rdoDes20;
+        private System.Windows.Forms.RadioButton rdoDes15;
+        private System.Windows.Forms.RadioButton rdoDes10;
+        private System.Windows.Forms.RadioButton rdoDes5;
+        private System.Windows.Forms.RadioButton rdoDes0;
     }
 }
